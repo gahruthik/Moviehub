@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHVM</title>
+    <link rel="stylesheet" href="HHVM.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="HHVM-container">
+        <img class="HHVM" src="./assets/HHVM.webp" alt="HHVM">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/pawan kalyan.webp" alt="Pawan kalyan">
+            <p>Pawan kalyan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Nidhhi Agarwal.jpg" alt="Nidhhi Agarwal">
+            <p>Nidhhi Agarwal</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Bobby.webp" alt="Bobby Deol">
+            <p>Bobby Deol</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Satyaraj.jpg" alt="Satyaraj">
+            <p>Satyaraj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sunil.webp" alt="Sunil">
+            <p>Sunil</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Nassar.webp" alt="Nassar">
+            <p>Nassar</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Nora Fatehi.webp" alt="Nora Fatehi">
+            <p>Nora Fatehi</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Anasuya Bharadwaj.webp" alt="Anasuya Bharadwaj">
+            <p>Anasuya Bharadwaj</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Hari Hara Veera Mallu: Part 1  Sword vs Spirit is a 2025 Indian Telugu-language historical action-adventure film written and directed by A. M. Jyothi Krishna alongside Krish Jagarlamudi[6] The film stars Pawan Kalyan in the titular role, alongside Nidhhi Agerwal and Bobby Deol in prominent roles. Sathyaraj, Easwari Rao, Sunil, Nassar, Subbaraju, Ayyappa P. Sharma, Kabir Duhan Singh, Raghu Babu, Nihar Kapoor and others feature in supporting roles. It is set in the 17th century Mughal Empire and follows Veera Mallu, a celebrated warrior who is given the mission to recover the Koh-i-Noor to rescue a city from Mughal soldiers.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+<div id="hhvmReviewsList"></div>
+
+
+    <script src="HHVM.js"></script>
+    
+</body>
+</html>

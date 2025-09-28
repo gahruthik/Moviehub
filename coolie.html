@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolie</title>
+    <link rel="stylesheet" href="coolie.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="coolie-container">
+        <img class="coolie" src="./assets/Coolie.jpg" alt="Coolie">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Rajini.webp" alt="RajiniKanth">
+            <p>RajiniKanth</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Nagarjuna.jpg" alt="Nagarjuna">
+            <p>Nagarjuna</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Soubin Shahir.webp" alt="Soubin Shahir">
+            <p>Soubin Shahir</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Upendra.webp" alt="Upendra">
+            <p>Upendra</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Amir khan.webp" alt="Amir Khan">
+            <p>Amir Khan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Shruti Haasan.jpg" alt="Shruti Haasan">
+            <p>Shruti Haasan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Satyaraj.jpg" alt="Satyaraj">
+            <p>Satyaraj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Pooja Hegde.jpg" alt="Pooja Hegde">
+            <p>Pooja Hegde</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Coolie is a 2025 Indian Tamil-language action thriller film written and directed by Lokesh Kanagaraj and produced by Kalanithi Maran under Sun Pictures. The film features an ensemble cast including Rajinikanth, Nagarjuna Akkineni, Soubin Shahir, Upendra, Shruti Haasan, Sathyaraj and Rachita Ram, with Aamir Khan and Pooja Hegde in special appearances. In the film, a former coolie union leader investigates the death of his friend which leads him to a crime syndicate.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <div id="reviewslist"></div>
+
+    <script src="coolie.js"></script>
+    
+</body>
+</html>

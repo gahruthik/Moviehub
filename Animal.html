@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <link rel="stylesheet" href="Animal.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+            </div> -->
+        </nav>
+    </header>
+    <div class="animal-container">
+        <img class="animal" src="./assets/Animal.jpg" alt="Animal">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Ranbir.jpg" alt="Ranbir">
+            <p>Ranbir Kapoor</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Rashmika-Mandanna.jpg" alt="Rashmika Mandanna">
+            <p>Rashmika Mandanna</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Bobby.webp" alt="Bobby">
+            <p>Bobby Deol</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Tripti.webp" alt="Tripti">
+            <p>Tripti Dimri</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Anil-kapoor.webp" alt="Anil Kapoor">
+            <p>Anil Kapoor</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Anshul.jpg" alt="Anshul">
+            <p>Anshul Chauhan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Saloni.jpg" alt="Saloni">
+            <p>Saloni Khanna</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Prithviraj.jpg" alt="Prithviraj">
+            <p>Prithviraj Sukumaran</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Animal is a 2023 Indian Hindi-language action drama film co-written, directed and edited by Sandeep Reddy Vanga and produced by T-Series Films, Bhadrakali Pictures and Cine1 Studios. The film stars Ranbir Kapoor, Anil Kapoor, Bobby Deol, Rashmika Mandanna and Triptii Dimri. It explores the strained relationship between Ranvijay Singh and his father, Balbir Singh, an industrialist. After spending years abroad, Ranvijay returns home with plans for revenge against those who attempted to assassinate his father.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <div id="reviewsList"></div>
+
+    <script src="Animal.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War-2</title>
+    <link rel="stylesheet" href="kgf.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/War2.jpeg" alt="War-2">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/NTR.jpg" alt="NTR">
+            <p>NTR</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Hrithik Roashan.jpg" alt="Hrithik Roashan">
+            <p>Hrithik Roashan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Kiara Advani.jpg" alt="Kiara Advani">
+            <p>Kiara Advani</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Anil-kapoor.webp" alt="Anil-kapoor">
+            <p>Anil-kapoor</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Bobby.webp" alt="Bobby Deol">
+            <p>Bobby Deol</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Ashutosh Rana.jpg" alt="Ashutosh Rana">
+            <p>Ashutosh Rana</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Varun Badola.jpg" alt="Varun Badola">
+            <p>Devraj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Arista Mehta.jpg" alt="Arista Mehta">
+            <p>Arista Mehta</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>War 2 is a 2025 Indian Hindi-language action thriller film directed by Ayan Mukerji and produced by Aditya Chopra under Yash Raj Films. Based on a script written by Shridhar Raghavan and Abbas Tyrewala, from an original story by Chopra, it is the sixth instalment in the YRF Spy Universe and a sequel to War (2019). The film stars Hrithik Roshan, N. T. Rama Rao Jr. (in his Hindi film debut) and Kiara Advani in the lead roles alongside Ashutosh Rana and Anil Kapoor. It follows Kabir Dhaliwal, a former RAW agent, who, after going rogue, becomes a major threat to national security, and a special units officer, Vikram Chelapathi, is assigned to neutralize him.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="war2ReviewsList"></div>
+
+
+
+
+    <script src="War2.js"></script>
+    
+</body>
+</html>

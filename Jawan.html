@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawan</title>
+    <link rel="stylesheet" href="Jawan.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="HHVM-container">
+        <img class="HHVM" src="./assets/Jawan.jpg" alt="Jawan">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Shah Rukh Khan.jpg" alt="Shah Rukh Khan">
+            <p>Shah Rukh Khan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Nayanathara.jpg" alt="Nayanathara">
+            <p>Nayanathara</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Deepika Padkone.jpg" alt="Deepika Padkone">
+            <p>Deepika Padkone</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Vijay Sethupathi.jpg" alt="Vijay Sethupathi">
+            <p>Vijay Sethupathi</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Priyamani.jpg" alt="Priyamani">
+            <p>Priyamani</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sanjay Dutt.jpg" alt="Sanjay Dutt">
+            <p>Sanjay Dutt</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sanya Malhotra.jpg" alt="Sanya Malhotra">
+            <p>Sanya Malhotra</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sanjeeta Bhattacharya.jpg" alt="Sanjeeta Bhattacharya">
+            <p>Sanjeeta Bhattacharya</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Jawan is a 2023 Indian Hindi-language action thriller film co-written and directed by Atlee (in his Hindi film debut). It is produced by Gauri Khan and Gaurav Verma under Red Chillies Entertainment. The film stars Shah Rukh Khan in a dual role as lookalike father and son alongside Nayanthara (in her Hindi film debut) and Vijay Sethupathi. In the film, Azad, the jailer of a woman's prison, is a vigilante who recruits inmates and commits acts that shed light on corruption in India.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="jawanReviewsList"></div>
+
+
+
+    <script src="Jawan.js"></script>
+    
+</body>
+</html>

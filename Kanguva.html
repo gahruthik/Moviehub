@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanguva</title>
+    <link rel="stylesheet" href="kgf.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/Kanguva.jpg" alt="Kanguva">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/suriya.jpg" alt="suriya">
+            <p>suriya</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Disha Patani.jpg" alt="Disha Patani">
+            <p>Disha Patani</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Bobby.webp" alt="Bobby Deol">
+            <p>Bobby Deol
+            </p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Karthi.jpg" alt="Karthi">
+            <p>Karthi</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Bobby.webp" alt="Bobby Deol">
+            <p>Bobby Deol</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/yogi babu.jpg" alt="yogi babu">
+            <p>yogi babu</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Natty Subramaniam.jpg" alt="Natty Subramaniam">
+            <p>Natty Subramaniam</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Mansoor Ali Khan.jpg" alt="Mansoor Ali Khan">
+            <p>Mansoor Ali Khan</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Kanguva (/kəŋɡʊˈvɑː/ transl. Man with the Power of Fire) is a 2024 Indian Tamil-language epic fantasy action thriller film[a] directed by Siva and produced by Studio Green, together with UV Creations. The film stars Suriya in dual roles, alongside Bobby Deol, Disha Patani, Natty Subramaniam, K. S. Ravikumar, Yogi Babu, Redin Kingsley, Kovai Sarala, Ravi Raghavendra and Karunas. It is the Tamil debut of Deol and Patani. The film follows Francis Theodore, a bounty hunter in 2024, whose connection with a child is mysteriously connected to a fierce tribal warrior's promise to a child in the year 1070.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="kanguvaReviewsList"></div>
+
+
+
+
+    <script src="Kanguva.js"></script>
+    
+</body>
+</html>

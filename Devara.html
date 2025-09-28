@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devara</title>
+    <link rel="stylesheet" href="Devara.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Devara-container">
+        <img class="Devara" src="./assets/devara.jpg" alt="Devara">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/NTR.jpg" alt="NTR">
+            <p>NTR</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Saif Ali Khan.jpg" alt="Saif Ali khan">
+            <p>Saif Ali khan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Janhvi Kapoor.jpg" alt="Janhvi Kapoor">
+            <p>Janhvi Kapoor</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Prakash Raj.jpg" alt="Prakash Raj">
+            <p>Prakash Raj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Srikanth.jpg" alt="Srikanth">
+            <p>Srikanth</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Shine Tom Chacko.jpg" alt="Shine Tom Chacko">
+            <p>Shine Tom Chacko</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Ajay.jpg" alt="Ajay">
+            <p>Ajay</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Shruti Marathe.jpg" alt="Shruti Marathe">
+            <p>Shruti Marathe</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Devara: Part 1 is a 2024 Indian Telugu-language action drama film written and directed by Koratala Siva. It is produced by Yuvasudha Arts and N. T. R. Arts. The film stars N. T. Rama Rao Jr. in dual roles, alongside Saif Ali Khan, Janhvi Kapoor, Prakash Raj, Srikanth and Shine Tom Chacko. It is the first part of a planned duology and marks the Telugu film debut of Kapoor. The film follows Devara, chieftain of a coastal village, who feuds with his counterpart Bhaira over arms smuggling through the Red Sea.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <div id="reviewslist"></div>
+
+    <script src="Devara.js"></script>
+    
+</body>
+</html>

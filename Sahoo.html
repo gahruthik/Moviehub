@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahoo</title>
+    <link rel="stylesheet" href="Sahoo.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/Saaho-4.jpg" alt="Sahoo">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Prabhas.jpg" alt="Prabhas">
+            <p>Prabhas</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Shradha Kapoor.jpg" alt="Shradha Kapoor">
+            <p>Shradha Kapoor</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Jakie Shroff.jpg" alt="Jakie Shroff">
+            <p>Jakie Shroff</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Veneela Kishore.jpg" alt="Veneela Kishore">
+            <p>Veneela Kishore</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Neil Nitin Mukesh.jpg" alt="Neil Nitin Mukesh">
+            <p>Neil Nitin Mukesh</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Murali Sharma.jpg" alt="Murali Sharma">
+            <p>Murali Sharma</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Arun Vijay.jpg" alt="Arun Vijay">
+            <p>Arun Vijay</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Chunky Panday.jpg" alt="Chunky Panday">
+            <p>Chunky Panday</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Jacqueline Fernandez.jpg" alt="Jacqueline Fernandez">
+            <p>Jacqueline Fernandez</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Saaho (transl. May Victory be Yours) is a 2019 Indian action thriller film directed by Sujeeth and produced by UV Creations and T-Series.[3] Filmed simultaneously in Telugu and Hindi, the film stars Prabhas in the titular role, alongside Shraddha Kapoor, Chunky Pandey, Jackie Shroff, Arun Vijay and Neil Nitin Mukesh. It is the debut for Prabhas in Hindi cinema and Shraddha Kapoor in Telugu cinema. The film follows two undercover officers who are searching for a mastermind responsible for stealing ₹2,000 crore (US$284 million) and soon realise that the case is linked to the death of a prominent business tycoon and an emerging gang war for the control of a megalopolis.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="saahoReviewsList"></div>
+
+
+
+
+    <script src="Sahoo.js"></script>
+    
+</body>
+</html>

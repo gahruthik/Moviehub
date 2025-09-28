@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGF-Chapter-2</title>
+    <link rel="stylesheet" href="kgf.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/kgf.webp" alt="KGF-Chapter-2">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Yash.jpg" alt="Yash">
+            <p>Yash</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sanjay Dutt.jpg" alt="Sanjay Dutt">
+            <p>Sanjay Dutt</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Srinidhi Shetty.jpg" alt="Srinidhi Shetty">
+            <p>Srinidhi Shetty</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Raveena Tandon.jpg" alt="Raveena Tandon">
+            <p>Raveena Tandon</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Prakash Raj.jpg" alt=Prakash Raj>
+            <p>Prakash Raj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Rao Ramesh.jpg" alt="Rao Ramesh">
+            <p>Rao Ramesh</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Achyuth Kumar.jpg" alt="Achyuth Kumar">
+            <p>Achyuth Kumar</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Vashista N.Simha.jpg" alt="Vashista N.Simha">
+            <p>Vashista N.Simha</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>KGF: Chapter 2 is a 2022 Indian Kannada-language period action film written and directed by Prashanth Neel, and produced by Vijay Kiragandur under his Hombale Films banner. It serves as the direct sequel to KGF: Chapter 1 (2018), as well as the second installment in the KGF franchise. The film stars an ensemble cast of Yash, Sanjay Dutt, Raveena Tandon, Srinidhi Shetty, Prakash Raj, Achyuth Kumar, Rao Ramesh, Vasishta N. Simha, Ayyappa P. Sharma, Archana Jois, Saran Shakti, Easwari Rao, John Kokken, T. S. Nagabharana and Malavika Avinash.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="kgfReviewsList"></div>
+
+
+
+
+    <script src="kgf.js"></script>
+    
+</body>
+</html>

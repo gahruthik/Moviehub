@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salaar</title>
+    <link rel="stylesheet" href="kgf.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/Salaar.jpg" alt="Salaar">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Prabhas.jpg" alt="Prabhas">
+            <p>Prabhas</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Shruti Haasan.jpg" alt="Shruti Haasan">
+            <p>Shruti Haasan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Sreya-Reddy.jpg" alt="Sreya-Reddy">
+            <p>Sreya Reddy</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Prithviraj Sukumaran.jpg" alt="Prithviraj Sukumaran">
+            <p>Prithviraj Sukumaran</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Jagapathi Babu.jpg" alt="Jagapathi Babu">
+            <p>Jagapathi Babu</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Brahmaji.jpg" alt="Brahmaji">
+            <p>Brahmaji</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Devraj.jpg" alt="Devraj">
+            <p>Devraj</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Ramachandra Raju.jpg" alt="Ramachandra Raju">
+            <p>Ramachandra Raju</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Salaar: Part 1 – Ceasefire is a 2023 Indian Telugu-language epic neo-noir action thriller film directed by Prashanth Neel and produced by Vijay Kiragandur under Hombale Films. The film stars Prabhas in the titular role, alongside an ensemble cast of Prithviraj Sukumaran, Shruti Haasan, Jagapathi Babu, Bobby Simha, Sriya Reddy, Ramachandra Raju, John Vijay, Easwari Rao, Tinnu Anand, Devaraj, Brahmaji and Mime Gopi. In the fictional dystopian city-state of Khansaar, where monarchy still exists, the film follows the friendship between Deva (Prabhas), the exiled prince of Khansaar, and Varadha (Prithviraj Sukumaran), the current prince of Khansaar. When a coup d'état is planned by his father's ministers and his relatives, Varadha enlists Deva's help to become Khansaar's undisputed ruler.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="salaarReviewsList"></div>
+
+
+
+
+    <script src="Salaar.js"></script>
+    
+</body>
+</html>

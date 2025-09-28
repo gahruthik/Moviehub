@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokah-Chapter-1</title>
+    <link rel="stylesheet" href="kgf.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Sahoo-container">
+        <img class="Sahoo" src="./assets/Lokah-Chapter-1.jpg" alt="Lokah-Chapter-1">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Kalyani Priyadarshan.jpg" alt="Kalyani Priyadarshan">
+            <p>Kalyani Priyadarshan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Dulquer Salman.jpg" alt="Dulquer Salman">
+            <p>Dulquer Salman</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Tovino Thomos.jpg" alt="Tovino Thomos">
+            <p>Tovino Thomos</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Naslen.jpg" alt="Naslen">
+            <p>Naslen</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Santhy Balachandran.jpg" alt="Santhy Balachandran">
+            <p>Santhy Balachandran</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Murali Sharma.jpg" alt="Murali Sharma">
+            <p>Murali Sharma</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Mammootty.jpg" alt="Mammootty">
+            <p>Mammootty</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Arun Kurian.jpg" alt="Arun Kurian">
+            <p>Arun Kurian</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Amith Mohan.jpg" alt="Amith Mohan">
+            <p>Amith Mohan</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Lokah Chapter 1: Chandra is a 2025 Indian Malayalam-language superhero film directed by Dominic Arun and produced by Dulquer Salmaan under his banner Wayfarer Films. Set as the first installment in the planned Wayfarer Cinematic Universe, the film stars Kalyani Priyadarshan alongside Naslen, Sandy, Arun Kurian, Chandu Salimkumar, Nishanth Sagar, Raghunath Paleri, Vijayaraghavan, Nithya Shri and Sarath Sabha.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="lokahReviewsList"></div>
+
+
+
+
+    <script src="Lokah.js"></script>
+    
+</body>
+</html>

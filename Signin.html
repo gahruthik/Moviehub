@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="Signin.css">
+</head>
+<body>
+    <h1>MovieHub</h1>
+    <div class="signin">
+        <form class="sign" onsubmit="return false;">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" placeholder="abc@gmail.com">
+            <br/>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" placeholder="Enter your password">
+            <br/>
+            <button type="button" class="Submit" onclick="validateAndRedirect()">Signin</button>
+            <br/>
+            <a href="#">Forgot Password</a>
+            <a href="Signup.html">Create Account</a>
+        </form>
+    </div>
+
+    <script>
+        function validateAndRedirect() {
+            const username = document.getElementById("Username").value.trim();
+            const password = document.getElementById("Password").value.trim();
+
+            if (username === "" || password === "") {
+                alert("Please enter both username and password.");
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalki</title>
+    <link rel="stylesheet" href="Kalki.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <h2 class="logo">MovieHub</h2>
+                <a href="#" onclick="window.location.href='index.html'">Home</a>
+
+                <a href="#" onclick="window.location.href='Upcoming.html'">Upcoming Films</a>
+                <a href="#" onclick="window.location.href='celebritys.html'">Celebritys</a>
+
+            </div>
+    
+            <!-- <div class="nav-right">
+                <input type="text" placeholder="Search movies" class="search-bar">
+                <button class="create-btn">Search</button>
+                <a href="#" onclick="window.location.href=''">Signin</a>
+                <a href="#" onclick="window.location.href=''">Signup</a>
+            </div> -->
+        </nav>
+    </header>
+    <div class="Kalki-container">
+        <img class="Kalki" src="./assets/Kalki-2898-AD.jpg" alt="Kalki-2898-AD">
+        <div id="averageRating" class="average-rating"></div> <!-- NEW -->
+        <hr>
+    </div>
+    
+
+    <h2>Cast</h2>
+    <div class="cast">
+        <div class="cast-member">
+            <img src="./assets/Prabhas.jpg" alt="Prabhas">
+            <p>Prabhas</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Amitabh Bachchan.jpg" alt="Amitabh Bachchan">
+            <p>Amitabh Bachchan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Kamal Haasan.jpg" alt="Kamal Haasan">
+            <p>Kamal Haasan</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Deepika Padkone.jpg" alt="Deepika Padkone">
+            <p>Deepika Padkone</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Disha Patani.jpg" alt="Disha Patani">
+            <p>Disha Patani</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Pasupathy.jpg" alt="Pasupathy">
+            <p>Pasupathy</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Vijay Devarakonda.jpg" alt="Vijay Devarakonda">
+            <p>Vijay Devarakonda</p>
+        </div>
+        <div class="cast-member">
+            <img src="./assets/Saswata chatterjee.jpg" alt="Saswata chatterjee">
+            <p>Saswata chatterjee</p>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Description</h2>
+        <p>Kalki 2898 AD (Telugu: [kəlkI]) is a 2024 Indian Telugu-language epic mythological science-fiction film co-written and directed by Nag Ashwin. Produced by Vyjayanthi Movies, it features an ensemble cast including Amitabh Bachchan, Kamal Haasan, Prabhas, Deepika Padukone, and Disha Patani. Inspired by Hindu scriptures, the film serves as the first instalment in the planned Kalki Cinematic Universe. Set in a dystopian future in the year 2898 AD, the story follows a group on a mission to protect lab subject SUM-80's unborn child, believed to be Kalki.</p>
+    </div>
+
+    <h2>Reviews</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <br/>
+    <textarea id="reviewText" placeholder="Write your review"></textarea>
+    <br/>
+
+    <!-- Star Rating -->
+    <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <br/>
+
+    <button onclick="addReview()">Submit Review</button>
+    <!-- Reviews Section -->
+    <div id="kalkiReviewsList"></div>
+
+
+
+
+    <script src="Kalki.js"></script>
+    
+</body>
+</html>
